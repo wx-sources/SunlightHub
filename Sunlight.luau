@@ -1,7 +1,7 @@
 local Sound = Instance.new("Sound", game:GetService("SoundService"));
 Sound.SoundId = "rbxassetid://232127604";
 Sound:Play();
-local args1 = {[1] = "RolePlayName", [2] = "Gui Slowed"};
+local args1 = {[1] = "RolePlayName", [2] = "Sunlight Hub user"};
 game:GetService("ReplicatedStorage").RE:FindFirstChild(
     "1RPNam1eTex1t"):FireServer(unpack(args1));
 local args = {
@@ -10,25 +10,25 @@ local args = {
 };
 game:GetService("ReplicatedStorage").RE:FindFirstChild(
     "1RPNam1eColo1r"):FireServer(unpack(args));
-local args4 = {[1] = "RolePlayBio", [2] = "Slowed Studios"};
+local args4 = {[1] = "RolePlayBio", [2] = "Wx and granolakkj"};
 game:GetService("ReplicatedStorage").RE:FindFirstChild(
     "1RPNam1eTex1t"):FireServer(unpack(args4));
 local OrionLib = loadstring(game:HttpGet(
                                 "https://you.whimper.xyz/sources/slowed/0"))();
 local Window = OrionLib:MakeWindow({
-    Name = "Slowed Hub",
+    Name = "🌅 Sunlight Hub xy 🌅",
     HidePremium = false,
     SaveConfig = true,
     ConfigFolder = "XScriptHub",
-    IntroText = "Slowed Studios"
+    IntroText = "Sunlight by Wx/granolakkj"
 });
 local CRD = Window:MakeTab({
-    Name = "informaÃ§Ãµes",
+    Name = "Info",
     Icon = "rbxassetid://15764521947",
     PremiumOnly = false
 });
 local HH = Window:MakeTab({
-    Name = "InÃ­cio",
+    Name = "Ini­cio",
     Icon = "rbxassetid://15764493661",
     PremiumOnly = false
 });
@@ -48,24 +48,24 @@ local TT = Window:MakeTab({
     PremiumOnly = false
 });
 local utilitiesTab = Window:MakeTab({
-    Name = "ConfiguraÃ§Ãµes",
+    Name = "Configurações",
     Icon = "rbxassetid://140270687691975",
     PremiumOnly = false
 });
-local Section = CRD:AddSection({Name = "ðŸŽ„ Creator ðŸŽ„"});
-CRD:AddLabel("Dev - Scritp: CodeCraft / MatheuszinZK");
+local Section = CRD:AddSection({Name = "Script"});
+CRD:AddLabel("Dev: Wx / granolakkj");
 local function copyText()
     local textToCopy = "https://discord.gg/25ms";
     setclipboard(textToCopy);
     OrionLib:MakeNotification({
         Name = "Texto Copiado",
-        Content = "O link do dc foi copiado para a Ã¡rea de transferÃªncia",
+        Content = "text.copied action!",
         Image = "rbxassetid://15918472454",
         Time = 5
     });
 end
 CRD:AddButton({
-    Name = "Copiar Link Do nosso Doscord",
+    Name = "Copiar Link Do 25ms",
     Callback = copyText
 });
 local Section = CRD:AddSection({Name = "Jogo Join"});
@@ -84,7 +84,7 @@ local notificationsEnabled = true;
 local function showNotification(message, time)
     if notificationsEnabled then
         OrionLib:MakeNotification({
-            Name = "NotificaÃ§Ã£o",
+            Name = "Notificatio£o",
             Content = message,
             Time = time or 5
         });
@@ -98,7 +98,7 @@ Players.PlayerRemoving:Connect(function(player)
 end);
 local notificationToggle;
 notificationToggle = HH:AddToggle({
-    Name = "NotificaÃ§Ã£o: Entrada/SaÃ­da",
+    Name = "Notification: Entrada/SaÃ­da",
     Default = true,
     Callback = function(Value)
         notificationsEnabled = Value;
@@ -537,7 +537,7 @@ game:GetService("RunService").Stepped:Connect(function()
     end
 end);
 local Section = JJ:AddSection({
-    Name = "Settings - AlteraÃ§Ã£o De Nomes"
+    Name = "Settings - Alterações De Nomes"
 });
 JJ:AddTextbox({
     Name = "Altera Nome",
@@ -629,7 +629,7 @@ HouseTab:AddDropdown({
     end
 });
 HouseTab:AddButton({
-    Name = "Dar PermissÃ£o",
+    Name = "Dar Permission",
     Callback = function()
         if selectedHouseNumber then
             local args = {
@@ -689,7 +689,7 @@ TT:AddButton({
     end
 });
 TT:AddButton({
-    Name = "Get ViolÃ£o (Sound)",
+    Name = "Get Violao (Sound)",
     Callback = function()
         loadstring(game:HttpGet(
                         "https://you.whimper.xyz/sources/slowed/2"))();
@@ -906,7 +906,7 @@ local function removeLag()
     end
     OrionLib:MakeNotification({
         Name = "Removendo...",
-        Content = "Texturas, luzes e objetos invisÃ­veis foram removidos.",
+        Content = "Texturas, luzes e objetos invisiveis foram removidos.",
         Time = 5
     });
 end
